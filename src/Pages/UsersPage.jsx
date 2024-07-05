@@ -12,14 +12,14 @@ const UsersPage = () => {
 
   return (
     <>
-        <h2 className='text-black font-semibold text-[50px] my-[20px]'>Our satisfied customers</h2>
-        <div className='allCards flex flex-wrap gap-10'>
+        <h2 className='text-black font-semibold text-[50px] my-[20px] text-center'>Our satisfied customers</h2>
+        <div className='container mx-auto allCards flex flex-wrap gap-10'>
         {
           data.map((item)=>(
                         
-            <div className='singleUser w-[350px] h-[400px] bg-[#64CCC5] rounded-[10px] p-5 flex items-center flex-col'>
+            <div className='singleUser w-[350px] h-[400px] bg-[#64CCC5] rounded-[10px] p-5 flex items-center flex-col shadow-[5px_5px_0px_0px_rgba(109,40,217)]'>
           <div className='img_col w-[200px] h-[200px] rounded-full overflow-hidden'>
-              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7av_tdhO4CdLxhteZIv2Gjf_CWOj7ZGrXw&s' alt='ID card picture'/>
+              <img src='https://png.pngtree.com/element_pic/17/09/18/eaaa7c9fd4ce780349e072ad967b8779.jpg' alt='ID card picture'/>
           </div>
           <div className="user_text">
             <p className='text-xl font-semibold text-white'>id:{item.id}</p>
